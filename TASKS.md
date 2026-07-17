@@ -17,11 +17,11 @@
   - [x] T0.2.4 Criar app `categories` com `startapp`.
   - [x] T0.2.5 Criar app `transactions` com `startapp`.
   - [x] T0.2.6 Registrar todas as apps em `INSTALLED_APPS` no `settings.py`.
-- [ ] **T0.3 — Configuração base do settings**
-  - [ ] T0.3.1 Configurar `TEMPLATES` para buscar templates em pasta global `templates/` na raiz do projeto.
-  - [ ] T0.3.2 Configurar `STATICFILES_DIRS` e `STATIC_URL` para arquivos estáticos globais.
-  - [ ] T0.3.3 Configurar idioma padrão (`LANGUAGE_CODE = 'pt-br'`) e timezone (`TIME_ZONE = 'America/Sao_Paulo'`).
-  - [ ] T0.3.4 Configurar `LOGIN_URL`, `LOGIN_REDIRECT_URL` e `LOGOUT_REDIRECT_URL`.
+- [x] **T0.3 — Configuração base do settings**
+  - [x] T0.3.1 Configurar `TEMPLATES` para buscar templates em pasta global `templates/` na raiz do projeto.
+  - [x] T0.3.2 Configurar `STATICFILES_DIRS` e `STATIC_URL` para arquivos estáticos globais.
+  - [x] T0.3.3 Configurar idioma padrão (`LANGUAGE_CODE = 'pt-br'`) e timezone (`TIME_ZONE = 'America/Sao_Paulo'`).
+  - [x] T0.3.4 Configurar `LOGIN_URL`, `LOGIN_REDIRECT_URL` e `LOGOUT_REDIRECT_URL`.
 - [ ] **T0.4 — Base model compartilhada**
   - [ ] T0.4.1 Criar model abstrato `TimeStampedModel` na app `core` com os campos `created_at` (auto_now_add) e `updated_at` (auto_now).
 - [ ] **T0.5 — Configuração do TailwindCSS**
