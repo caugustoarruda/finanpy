@@ -40,36 +40,36 @@
 
 ### Sprint 1 — Usuários e autenticação
 
-- [ ] **T1.1 — Model de usuário customizado**
-  - [ ] T1.1.1 Criar model `User` na app `users` herdando de `AbstractUser`.
-  - [ ] T1.1.2 Remover/ajustar campo `username`, definindo `email` como `USERNAME_FIELD`.
-  - [ ] T1.1.3 Definir `REQUIRED_FIELDS` (ex: `first_name`).
-  - [ ] T1.1.4 Criar `UserManager` customizado com métodos `create_user` e `create_superuser` baseados em e-mail.
-  - [ ] T1.1.5 Adicionar `created_at` e `updated_at` herdando de `TimeStampedModel`.
-  - [ ] T1.1.6 Configurar `AUTH_USER_MODEL = 'users.User'` no `settings.py`.
-  - [ ] T1.1.7 Gerar e aplicar migrações iniciais do model `User`.
-- [ ] **T1.2 — Admin de usuários**
-  - [ ] T1.2.1 Registrar model `User` no `admin.py` da app `users`, adaptando `UserAdmin` para uso do e-mail.
-- [ ] **T1.3 — Cadastro de usuários (sign up)**
-  - [ ] T1.3.1 Criar `UserCreationForm` customizado (e-mail, nome, senha e confirmação de senha).
-  - [ ] T1.3.2 Criar `SignUpView` (Class Based View, `CreateView`) na app `users`.
-  - [ ] T1.3.3 Criar template `users/signup.html` seguindo o design system (formulário centralizado, card branco sobre fundo `bg-slate-100`).
-  - [ ] T1.3.4 Adicionar validação de e-mail único e mensagens de erro amigáveis.
-  - [ ] T1.3.5 Redirecionar para tela de login após cadastro bem-sucedido, com mensagem de sucesso.
-- [ ] **T1.4 — Login**
-  - [ ] T1.4.1 Criar `AuthenticationForm` customizado utilizando e-mail como campo de login.
-  - [ ] T1.4.2 Criar `LoginView` (baseada em `django.contrib.auth.views.LoginView`) com o form customizado.
-  - [ ] T1.4.3 Criar template `users/login.html` seguindo o design system.
-  - [ ] T1.4.4 Configurar redirecionamento para o dashboard após login bem-sucedido.
-- [ ] **T1.5 — Logout**
-  - [ ] T1.5.1 Configurar `LogoutView` nativa do Django.
-  - [ ] T1.5.2 Adicionar botão/link de logout na sidebar.
-- [ ] **T1.6 — Proteção de rotas**
-  - [ ] T1.6.1 Aplicar `LoginRequiredMixin` em todas as views internas do sistema.
-  - [ ] T1.6.2 Testar manualmente o redirecionamento de usuários não autenticados para o login.
-- [ ] **T1.7 — URLs de autenticação**
-  - [ ] T1.7.1 Criar `users/urls.py` com rotas de `signup`, `login` e `logout`.
-  - [ ] T1.7.2 Incluir `users.urls` no `core/urls.py`.
+- [x] **T1.1 — Model de usuário customizado**
+  - [x] T1.1.1 Criar model `User` na app `users` herdando de `AbstractUser`.
+  - [x] T1.1.2 Remover/ajustar campo `username`, definindo `email` como `USERNAME_FIELD`.
+  - [x] T1.1.3 Definir `REQUIRED_FIELDS` (ex: `first_name`).
+  - [x] T1.1.4 Criar `UserManager` customizado com métodos `create_user` e `create_superuser` baseados em e-mail.
+  - [x] T1.1.5 Adicionar `created_at` e `updated_at` herdando de `TimeStampedModel`.
+  - [x] T1.1.6 Configurar `AUTH_USER_MODEL = 'users.User'` no `settings.py`.
+  - [x] T1.1.7 Gerar e aplicar migrações iniciais do model `User`.
+- [x] **T1.2 — Admin de usuários**
+  - [x] T1.2.1 Registrar model `User` no `admin.py` da app `users`, adaptando `UserAdmin` para uso do e-mail.
+- [x] **T1.3 — Cadastro de usuários (sign up)**
+  - [x] T1.3.1 Criar `UserCreationForm` customizado (e-mail, nome, senha e confirmação de senha).
+  - [x] T1.3.2 Criar `SignUpView` (Class Based View, `CreateView`) na app `users`.
+  - [x] T1.3.3 Criar template `users/signup.html` seguindo o design system (formulário centralizado, card branco sobre fundo `bg-slate-100`).
+  - [x] T1.3.4 Adicionar validação de e-mail único e mensagens de erro amigáveis.
+  - [x] T1.3.5 Redirecionar para tela de login após cadastro bem-sucedido, com mensagem de sucesso.
+- [x] **T1.4 — Login**
+  - [x] T1.4.1 Criar `AuthenticationForm` customizado utilizando e-mail como campo de login.
+  - [x] T1.4.2 Criar `LoginView` (baseada em `django.contrib.auth.views.LoginView`) com o form customizado.
+  - [x] T1.4.3 Criar template `users/login.html` seguindo o design system.
+  - [x] T1.4.4 Configurar redirecionamento para o dashboard após login bem-sucedido.
+- [x] **T1.5 — Logout**
+  - [x] T1.5.1 Configurar `LogoutView` nativa do Django.
+  - [x] T1.5.2 Adicionar botão/link de logout na sidebar.
+- [x] **T1.6 — Proteção de rotas**
+  - [x] T1.6.1 Aplicar `LoginRequiredMixin` em todas as views internas do sistema.
+  - [x] T1.6.2 Testar manualmente o redirecionamento de usuários não autenticados para o login.
+- [x] **T1.7 — URLs de autenticação**
+  - [x] T1.7.1 Criar `users/urls.py` com rotas de `signup`, `login` e `logout`.
+  - [x] T1.7.2 Incluir `users.urls` no `core/urls.py`.
 
 ### Sprint 2 — Perfis
 

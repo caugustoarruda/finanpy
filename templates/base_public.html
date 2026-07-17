@@ -6,13 +6,16 @@
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
       <a href="#" class="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-xl font-bold text-transparent">Finanpy</a>
       <nav class="flex items-center gap-3">
-        <a href="#" class="rounded-lg border border-slate-300 bg-white px-4 py-2 font-medium text-slate-700 transition-colors duration-200 hover:bg-slate-50">Entrar</a>
-        <a href="#" class="rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-2 font-medium text-white shadow-sm transition-colors duration-200 hover:from-indigo-700 hover:to-purple-700">Cadastre-se</a>
+        <a href="{% url 'users:login' %}" class="rounded-lg border border-slate-300 bg-white px-4 py-2 font-medium text-slate-700 transition-colors duration-200 hover:bg-slate-50">Entrar</a>
+        <a href="{% url 'users:signup' %}" class="rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-2 font-medium text-white shadow-sm transition-colors duration-200 hover:from-indigo-700 hover:to-purple-700">Cadastre-se</a>
       </nav>
     </div>
   </header>
 
   <main class="flex-1">
+    <div class="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
+      {% include 'partials/_messages.html' %}
+    </div>
     {% block content %}{% endblock %}
   </main>
 

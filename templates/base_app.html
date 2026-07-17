@@ -1,10 +1,5 @@
 {% extends "base.html" %}
 
-{% block extra_head %}
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<style>[x-cloak] { display: none !important; }</style>
-{% endblock %}
-
 {% block body %}
 <div x-data="{ sidebarOpen: false }" class="min-h-screen">
   {% include 'partials/_sidebar.html' %}
