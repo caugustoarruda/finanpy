@@ -19,18 +19,34 @@
    pip install -r requirements.txt
    ```
 
-3. Aplique as migrações do banco de dados (SQLite):
+3. Copie o arquivo de variáveis de ambiente e ajuste os valores se necessário:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Aplique as migrações do banco de dados (SQLite):
 
    ```bash
    python manage.py migrate
    ```
 
-4. Rode o servidor de desenvolvimento:
+5. Rode o servidor de desenvolvimento:
 
    ```bash
    python manage.py runserver
    ```
 
-O projeto ainda não possui variáveis de ambiente ou configuração adicional além do `requirements.txt` — as dependências atuais são apenas Django e suas dependências diretas (`asgiref`, `sqlparse`).
+## Variáveis de ambiente
+
+Configuração sensível do `core/settings.py` é lida do arquivo `.env` (na raiz do projeto, não versionado) via `django-environ`. O `.env.example` documenta as variáveis esperadas:
+
+| Variável | Descrição | Exemplo |
+|---|---|---|
+| `SECRET_KEY` | Chave secreta do Django (nunca reutilize a de produção localmente) | `django-insecure-...` |
+| `DEBUG` | Liga/desliga o modo debug | `True` |
+| `ALLOWED_HOSTS` | Hosts permitidos, separados por vírgula | `localhost,127.0.0.1` |
+
+Nunca commite o arquivo `.env` — ele já está no `.gitignore`. Ao adicionar uma nova variável de configuração, atualize também o `.env.example`.
 
 Docker não é utilizado nas fases iniciais do projeto (veja [padrões de código](coding-standards.md)).

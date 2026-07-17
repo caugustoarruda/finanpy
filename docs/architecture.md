@@ -15,6 +15,8 @@
 
 As dependências Python do projeto estão em [`requirements.txt`](../requirements.txt), na raiz do repositório.
 
+Configuração sensível (`SECRET_KEY`, `DEBUG`, `ALLOWED_HOSTS`) é lida de variáveis de ambiente via `django-environ`, a partir de um `.env` na raiz (não versionado — veja [setup do ambiente local](setup.md)).
+
 ## Apps Django e responsabilidades
 
 O sistema é dividido em apps independentes, cada uma responsável por um domínio específico:

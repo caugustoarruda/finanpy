@@ -1,0 +1,23 @@
+<header class="sticky top-0 z-20 flex items-center justify-between gap-4 border-b border-slate-200 bg-white/80 px-4 py-3 backdrop-blur sm:px-6 lg:px-8">
+  <button
+    type="button"
+    class="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 md:hidden"
+    @click="sidebarOpen = true"
+    aria-label="Abrir menu"
+  >
+    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+    </svg>
+  </button>
+
+  <div class="flex-1"></div>
+
+  <div class="flex items-center gap-3">
+    <span class="hidden text-sm font-medium text-slate-700 sm:inline">
+      {% if user.is_authenticated %}{{ user.get_full_name|default:user.email }}{% else %}Usuário{% endif %}
+    </span>
+    <div class="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-sm font-semibold text-white">
+      {% if user.is_authenticated %}{{ user.email|first|upper }}{% else %}U{% endif %}
+    </div>
+  </div>
+</header>

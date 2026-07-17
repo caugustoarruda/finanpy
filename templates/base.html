@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full bg-slate-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Finanpy{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="h-full min-h-screen bg-slate-100 font-sans text-slate-800 antialiased">
+  {% block body %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% endblock %}
+  {% block extra_body %}{% endblock %}
+</body>
+</html>

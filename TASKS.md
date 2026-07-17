@@ -22,16 +22,21 @@
   - [x] T0.3.2 Configurar `STATICFILES_DIRS` e `STATIC_URL` para arquivos estáticos globais.
   - [x] T0.3.3 Configurar idioma padrão (`LANGUAGE_CODE = 'pt-br'`) e timezone (`TIME_ZONE = 'America/Sao_Paulo'`).
   - [x] T0.3.4 Configurar `LOGIN_URL`, `LOGIN_REDIRECT_URL` e `LOGOUT_REDIRECT_URL`.
-- [ ] **T0.4 — Base model compartilhada**
-  - [ ] T0.4.1 Criar model abstrato `TimeStampedModel` na app `core` com os campos `created_at` (auto_now_add) e `updated_at` (auto_now).
-- [ ] **T0.5 — Configuração do TailwindCSS**
-  - [ ] T0.5.1 Definir estratégia de integração do Tailwind (CDN para simplicidade do projeto).
-  - [ ] T0.5.2 Criar `templates/base.html` incluindo o script/link do Tailwind.
-  - [ ] T0.5.3 Definir paleta de cores e componentes base do design system no `base.html`.
-- [ ] **T0.6 — Templates e partials base**
-  - [ ] T0.6.1 Criar pasta `templates/partials/` com `_navbar.html`, `_sidebar.html`, `_messages.html` e `_footer.html`.
-  - [ ] T0.6.2 Criar template `base_public.html` (para landing page/login/cadastro) sem sidebar.
-  - [ ] T0.6.3 Criar template `base_app.html` (para área autenticada) com sidebar e header.
+- [x] **T0.4 — Base model compartilhada**
+  - [x] T0.4.1 Criar model abstrato `TimeStampedModel` na app `core` com os campos `created_at` (auto_now_add) e `updated_at` (auto_now).
+- [x] **T0.5 — Configuração do TailwindCSS**
+  - [x] T0.5.1 Definir estratégia de integração do Tailwind (CDN para simplicidade do projeto).
+  - [x] T0.5.2 Criar `templates/base.html` incluindo o script/link do Tailwind.
+  - [x] T0.5.3 Definir paleta de cores e componentes base do design system no `base.html`.
+- [x] **T0.6 — Templates e partials base**
+  - [x] T0.6.1 Criar pasta `templates/partials/` com `_navbar.html`, `_sidebar.html`, `_messages.html` e `_footer.html`.
+  - [x] T0.6.2 Criar template `base_public.html` (para landing page/login/cadastro) sem sidebar.
+  - [x] T0.6.3 Criar template `base_app.html` (para área autenticada) com sidebar e header.
+- [x] **T0.7 — Variáveis de ambiente (.env)**
+  - [x] T0.7.1 Adicionar `django-environ` ao `requirements.txt`.
+  - [x] T0.7.2 Criar `.env.example` documentando `SECRET_KEY`, `DEBUG` e `ALLOWED_HOSTS`.
+  - [x] T0.7.3 Ajustar `core/settings.py` para ler `SECRET_KEY`, `DEBUG` e `ALLOWED_HOSTS` do ambiente via `django-environ`.
+  - [x] T0.7.4 Criar `.env` local (não versionado) com os valores de desenvolvimento.
 
 ### Sprint 1 — Usuários e autenticação
 
@@ -216,7 +221,7 @@
 - [ ] **T9.1 — Containerização**
   - [ ] T9.1.1 Criar `Dockerfile` para a aplicação Django.
   - [ ] T9.1.2 Criar `docker-compose.yml` para orquestrar o serviço da aplicação.
-  - [ ] T9.1.3 Configurar variáveis de ambiente via arquivo `.env`.
+  - [ ] T9.1.3 Configurar `docker-compose.yml` para consumir o `.env` já existente (criado na T0.7) via `env_file`, documentando eventuais variáveis adicionais necessárias só para o container.
   - [ ] T9.1.4 Documentar comandos de build e execução via Docker no `README.md`.
 
 ### Sprint 10 (final) — Testes automatizados

@@ -161,6 +161,7 @@ flowchart TD
 - RNF12: Docker não deve ser implementado nas fases iniciais (reservado para sprint final).
 - RNF13: Testes automatizados não devem ser implementados nas fases iniciais (reservado para sprint final).
 - RNF14: O sistema não deve conter funcionalidades além das explicitamente solicitadas neste documento.
+- RNF15: Segredos e configuração sensível (`SECRET_KEY`, `DEBUG`, `ALLOWED_HOSTS`) devem ser lidos de variáveis de ambiente via arquivo `.env` (não versionado), nunca hardcoded no código-fonte.
 
 ---
 
@@ -263,6 +264,7 @@ erDiagram
 - Um `manager` customizado (`UserManager`) é necessário para criação de usuários e superusuários via e-mail.
 - Todos os models de domínio (`Account`, `Category`, `Transaction`, `Profile`) devem possuir um `ForeignKey`/`OneToOneField` para `User`.
 - Um `abstract base model` (`TimeStampedModel`) pode ser criado em `core` para centralizar os campos `created_at` e `updated_at`, evitando repetição.
+- Configuração sensível do `core/settings.py` (`SECRET_KEY`, `DEBUG`, `ALLOWED_HOSTS`) é lida de variáveis de ambiente via `django-environ`, a partir de um arquivo `.env` na raiz do projeto (não versionado — apenas `.env.example` é commitado como referência).
 
 ---
 

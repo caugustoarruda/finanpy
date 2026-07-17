@@ -36,6 +36,11 @@ Estas são as convenções que todo código do projeto deve seguir.
 
 - O projeto utiliza exclusivamente o SQLite padrão do Django. Não introduzir outros bancos de dados.
 
+## Configuração e segredos
+
+- Segredos e configuração sensível (`SECRET_KEY`, `DEBUG`, `ALLOWED_HOSTS`) devem ser lidos do ambiente via `django-environ`, nunca hardcoded em `settings.py`.
+- O arquivo `.env` nunca deve ser commitado (já está no `.gitignore`). Toda nova variável de configuração deve ser documentada em `.env.example`.
+
 ## Fora de escopo (por enquanto)
 
 - **Docker**: não deve ser implementado nas fases iniciais do projeto.

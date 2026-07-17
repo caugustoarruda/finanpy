@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<style>[x-cloak] { display: none !important; }</style>
+{% endblock %}
+
+{% block body %}
+<div x-data="{ sidebarOpen: false }" class="min-h-screen">
+  {% include 'partials/_sidebar.html' %}
+
+  <div class="flex min-h-screen flex-col md:pl-64">
+    {% include 'partials/_navbar.html' %}
+
+    <main class="flex-1 px-4 py-6 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        {% include 'partials/_messages.html' %}
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+
+    {% include 'partials/_footer.html' %}
+  </div>
+</div>
+{% endblock %}
