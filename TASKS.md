@@ -95,29 +95,29 @@
 
 ### Sprint 3 — Contas bancárias
 
-- [ ] **T3.1 — Model de conta bancária**
-  - [ ] T3.1.1 Criar model `Account` na app `accounts`, herdando de `TimeStampedModel`.
-  - [ ] T3.1.2 Adicionar `ForeignKey` para `User`.
-  - [ ] T3.1.3 Adicionar campos `name`, `account_type` (choices) e `initial_balance`.
-  - [ ] T3.1.4 Gerar e aplicar migrações do model `Account`.
-- [ ] **T3.2 — Admin de contas**
-  - [ ] T3.2.1 Registrar model `Account` no `admin.py` da app `accounts`.
-- [ ] **T3.3 — Listagem de contas**
-  - [ ] T3.3.1 Criar `AccountListView` (Class Based View, `ListView`) filtrando por `request.user`.
-  - [ ] T3.3.2 Criar template `accounts/list.html` com grid de cards seguindo o design system.
-- [ ] **T3.4 — Criação de conta**
-  - [ ] T3.4.1 Criar `AccountForm` (ModelForm).
-  - [ ] T3.4.2 Criar `AccountCreateView` (`CreateView`) associando a conta ao usuário logado.
-  - [ ] T3.4.3 Criar template `accounts/form.html` reutilizável para criação e edição.
-- [ ] **T3.5 — Edição de conta**
-  - [ ] T3.5.1 Criar `AccountUpdateView` (`UpdateView`), restringindo o queryset ao usuário logado.
-- [ ] **T3.6 — Exclusão de conta**
-  - [ ] T3.6.1 Criar `AccountDeleteView` (`DeleteView`), restringindo o queryset ao usuário logado.
-  - [ ] T3.6.2 Criar template `accounts/confirm_delete.html` de confirmação, seguindo o design system.
-- [ ] **T3.7 — URLs de contas**
-  - [ ] T3.7.1 Criar `accounts/urls.py` com rotas de listagem, criação, edição e exclusão.
-  - [ ] T3.7.2 Incluir `accounts.urls` no `core/urls.py`.
-  - [ ] T3.7.3 Adicionar link "Contas" na sidebar.
+- [x] **T3.1 — Model de conta bancária**
+  - [x] T3.1.1 Criar model `Account` na app `accounts`, herdando de `TimeStampedModel`.
+  - [x] T3.1.2 Adicionar `ForeignKey` para `User`.
+  - [x] T3.1.3 Adicionar campos `name`, `account_type` (choices) e `initial_balance`.
+  - [x] T3.1.4 Gerar e aplicar migrações do model `Account`.
+- [x] **T3.2 — Admin de contas**
+  - [x] T3.2.1 Registrar model `Account` no `admin.py` da app `accounts`.
+- [x] **T3.3 — Listagem de contas**
+  - [x] T3.3.1 Criar `AccountListView` (Class Based View, `ListView`) filtrando por `request.user`.
+  - [x] T3.3.2 Criar template `accounts/list.html` com grid de cards seguindo o design system.
+- [x] **T3.4 — Criação de conta**
+  - [x] T3.4.1 Criar `AccountForm` (ModelForm).
+  - [x] T3.4.2 Criar `AccountCreateView` (`CreateView`) associando a conta ao usuário logado.
+  - [x] T3.4.3 Criar template `accounts/form.html` reutilizável para criação e edição.
+- [x] **T3.5 — Edição de conta**
+  - [x] T3.5.1 Criar `AccountUpdateView` (`UpdateView`), restringindo o queryset ao usuário logado.
+- [x] **T3.6 — Exclusão de conta**
+  - [x] T3.6.1 Criar `AccountDeleteView` (`DeleteView`), restringindo o queryset ao usuário logado.
+  - [x] T3.6.2 Criar template `accounts/confirm_delete.html` de confirmação, seguindo o design system.
+- [x] **T3.7 — URLs de contas**
+  - [x] T3.7.1 Criar `accounts/urls.py` com rotas de listagem, criação, edição e exclusão.
+  - [x] T3.7.2 Incluir `accounts.urls` no `core/urls.py`.
+  - [x] T3.7.3 Adicionar link "Contas" na sidebar.
 
 ### Sprint 4 — Categorias
 

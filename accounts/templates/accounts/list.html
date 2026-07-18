@@ -1,0 +1,54 @@
+{% extends "base_app.html" %}
+
+{% block title %}Contas | Finanpy{% endblock %}
+
+{% block content %}
+<div class="flex flex-col gap-6">
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <div>
+      <h1 class="text-2xl md:text-3xl font-bold text-slate-800">Contas</h1>
+      <p class="text-sm text-slate-500 mt-1">Gerencie suas contas bancárias, carteiras e cartões.</p>
+    </div>
+    <a
+      href="{% url 'accounts:create' %}"
+      class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium px-4 py-2 rounded-lg shadow-sm transition-colors duration-200"
+    >
+      + Nova conta
+    </a>
+  </div>
+
+  {% if accounts %}
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {% for account in accounts %}
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col gap-4">
+      <div>
+        <h2 class="text-lg font-semibold text-slate-700">{{ account.name }}</h2>
+        <p class="text-sm text-slate-500">{{ account.get_account_type_display }}</p>
+      </div>
+      <p class="text-xl font-bold text-slate-800">R$ {{ account.initial_balance|floatformat:2 }}</p>
+      <div class="mt-auto flex justify-end gap-3 pt-2 border-t border-slate-200">
+        <a
+          href="{% url 'accounts:update' account.pk %}"
+          class="text-sm font-medium text-indigo-600 hover:text-indigo-700"
+        >Editar</a>
+        <a
+          href="{% url 'accounts:delete' account.pk %}"
+          class="text-sm font-medium text-rose-600 hover:text-rose-700"
+        >Excluir</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 text-center">
+    <p class="text-sm text-slate-500">Você ainda não cadastrou nenhuma conta.</p>
+    <a
+      href="{% url 'accounts:create' %}"
+      class="mt-4 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium px-4 py-2 rounded-lg shadow-sm transition-colors duration-200"
+    >
+      + Nova conta
+    </a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
