@@ -73,25 +73,25 @@
 
 ### Sprint 2 — Perfis
 
-- [ ] **T2.1 — Model de perfil**
-  - [ ] T2.1.1 Criar model `Profile` na app `profiles`, herdando de `TimeStampedModel`.
-  - [ ] T2.1.2 Adicionar `OneToOneField` para `User`.
-  - [ ] T2.1.3 Adicionar campos `phone`, `birth_date` e `avatar` (opcionais).
-  - [ ] T2.1.4 Gerar e aplicar migrações do model `Profile`.
-- [ ] **T2.2 — Criação automática de perfil**
-  - [ ] T2.2.1 Criar `profiles/signals.py` com signal `post_save` do model `User` para criar `Profile` automaticamente.
-  - [ ] T2.2.2 Conectar o signal no `apps.py` da app `profiles` (`ready()`).
-- [ ] **T2.3 — Admin de perfis**
-  - [ ] T2.3.1 Registrar model `Profile` no `admin.py` da app `profiles`.
-- [ ] **T2.4 — Visualização e edição de perfil**
-  - [ ] T2.4.1 Criar `ProfileDetailView` (ou reaproveitar `UpdateView`) na app `profiles`.
-  - [ ] T2.4.2 Criar `ProfileForm` (ModelForm) com os campos editáveis.
-  - [ ] T2.4.3 Criar template `profiles/detail.html` seguindo o design system (card com dados do usuário e do perfil).
-  - [ ] T2.4.4 Garantir que o usuário só possa editar o próprio perfil (`get_object` filtrando por `request.user`).
-- [ ] **T2.5 — URLs de perfil**
-  - [ ] T2.5.1 Criar `profiles/urls.py` com rota de visualização/edição do perfil.
-  - [ ] T2.5.2 Incluir `profiles.urls` no `core/urls.py`.
-  - [ ] T2.5.3 Adicionar link "Perfil" na sidebar.
+- [x] **T2.1 — Model de perfil**
+  - [x] T2.1.1 Criar model `Profile` na app `profiles`, herdando de `TimeStampedModel`.
+  - [x] T2.1.2 Adicionar `OneToOneField` para `User`.
+  - [x] T2.1.3 Adicionar campos `phone`, `birth_date` e `avatar` (opcionais).
+  - [x] T2.1.4 Gerar e aplicar migrações do model `Profile`.
+- [x] **T2.2 — Criação automática de perfil**
+  - [x] T2.2.1 Criar `profiles/signals.py` com signal `post_save` do model `User` para criar `Profile` automaticamente.
+  - [x] T2.2.2 Conectar o signal no `apps.py` da app `profiles` (`ready()`).
+- [x] **T2.3 — Admin de perfis**
+  - [x] T2.3.1 Registrar model `Profile` no `admin.py` da app `profiles`.
+- [x] **T2.4 — Visualização e edição de perfil**
+  - [x] T2.4.1 Criar `ProfileDetailView` (ou reaproveitar `UpdateView`) na app `profiles`.
+  - [x] T2.4.2 Criar `ProfileForm` (ModelForm) com os campos editáveis.
+  - [x] T2.4.3 Criar template `profiles/detail.html` seguindo o design system (card com dados do usuário e do perfil).
+  - [x] T2.4.4 Garantir que o usuário só possa editar o próprio perfil (`get_object` filtrando por `request.user`).
+- [x] **T2.5 — URLs de perfil**
+  - [x] T2.5.1 Criar `profiles/urls.py` com rota de visualização/edição do perfil.
+  - [x] T2.5.2 Incluir `profiles.urls` no `core/urls.py`.
+  - [x] T2.5.3 Adicionar link "Perfil" na sidebar.
 
 ### Sprint 3 — Contas bancárias
 

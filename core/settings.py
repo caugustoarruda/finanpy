@@ -133,7 +133,9 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # https://docs.djangoproject.com/en/6.0/topics/auth/default/
 
 LOGIN_URL = 'users:login'
-LOGIN_REDIRECT_URL = 'core:dashboard'
-LOGOUT_REDIRECT_URL = 'core:landing'
+# TODO: apontar para 'core:dashboard'/'core:landing' quando as Sprints 6/7
+# implementarem essas rotas. Por enquanto usamos as únicas rotas existentes.
+LOGIN_REDIRECT_URL = 'profiles:detail'
+LOGOUT_REDIRECT_URL = 'users:login'
 
 AUTH_USER_MODEL = 'users.User'
