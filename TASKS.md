@@ -145,33 +145,33 @@
   - [x] T4.7.2 Incluir `categories.urls` no `core/urls.py`.
   - [x] T4.7.3 Adicionar link "Categorias" na sidebar.
 
-### Sprint 5 — Transações
+### Sprint 5 — Transações [X]
 
-- [ ] **T5.1 — Model de transação**
-  - [ ] T5.1.1 Criar model `Transaction` na app `transactions`, herdando de `TimeStampedModel`.
-  - [ ] T5.1.2 Adicionar `ForeignKey` para `User`, `Account` e `Category`.
-  - [ ] T5.1.3 Adicionar campos `description` (opcional), `amount`, `transaction_type` (choices) e `transaction_date`.
-  - [ ] T5.1.4 Gerar e aplicar migrações do model `Transaction`.
-- [ ] **T5.2 — Admin de transações**
-  - [ ] T5.2.1 Registrar model `Transaction` no `admin.py` da app `transactions`.
-- [ ] **T5.3 — Listagem de transações**
-  - [ ] T5.3.1 Criar `TransactionListView` (`ListView`) filtrando por `request.user`.
-  - [ ] T5.3.2 Implementar filtros via query params (conta, categoria, tipo, período) no `get_queryset`.
-  - [ ] T5.3.3 Criar template `transactions/list.html` em formato de tabela responsiva, seguindo o design system.
-  - [ ] T5.3.4 Adicionar formulário de filtro no topo da listagem (selects e campos de data).
-- [ ] **T5.4 — Criação de transação**
-  - [ ] T5.4.1 Criar `TransactionForm` (ModelForm), restringindo os `querysets` de conta/categoria ao usuário logado.
-  - [ ] T5.4.2 Criar `TransactionCreateView` (`CreateView`) associando a transação ao usuário logado.
-  - [ ] T5.4.3 Criar template `transactions/form.html` reutilizável para criação e edição.
-- [ ] **T5.5 — Edição de transação**
-  - [ ] T5.5.1 Criar `TransactionUpdateView` (`UpdateView`), restringindo o queryset ao usuário logado.
-- [ ] **T5.6 — Exclusão de transação**
-  - [ ] T5.6.1 Criar `TransactionDeleteView` (`DeleteView`), restringindo o queryset ao usuário logado.
-  - [ ] T5.6.2 Criar template `transactions/confirm_delete.html` de confirmação.
-- [ ] **T5.7 — URLs de transações**
-  - [ ] T5.7.1 Criar `transactions/urls.py` com rotas de listagem, criação, edição e exclusão.
-  - [ ] T5.7.2 Incluir `transactions.urls` no `core/urls.py`.
-  - [ ] T5.7.3 Adicionar link "Transações" na sidebar.
+- [x] **T5.1 — Model de transação**
+  - [x] T5.1.1 Criar model `Transaction` na app `transactions`, herdando de `TimeStampedModel`.
+  - [x] T5.1.2 Adicionar `ForeignKey` para `User`, `Account` e `Category`.
+  - [x] T5.1.3 Adicionar campos `description` (opcional), `amount`, `transaction_type` (choices) e `transaction_date`.
+  - [x] T5.1.4 Gerar e aplicar migrações do model `Transaction`.
+- [x] **T5.2 — Admin de transações**
+  - [x] T5.2.1 Registrar model `Transaction` no `admin.py` da app `transactions`.
+- [x] **T5.3 — Listagem de transações**
+  - [x] T5.3.1 Criar `TransactionListView` (`ListView`) filtrando por `request.user`.
+  - [x] T5.3.2 Implementar filtros via query params (conta, categoria, tipo, período) no `get_queryset`.
+  - [x] T5.3.3 Criar template `transactions/list.html` em formato de tabela responsiva, seguindo o design system.
+  - [x] T5.3.4 Adicionar formulário de filtro no topo da listagem (selects e campos de data).
+- [x] **T5.4 — Criação de transação**
+  - [x] T5.4.1 Criar `TransactionForm` (ModelForm), restringindo os `querysets` de conta/categoria ao usuário logado.
+  - [x] T5.4.2 Criar `TransactionCreateView` (`CreateView`) associando a transação ao usuário logado.
+  - [x] T5.4.3 Criar template `transactions/form.html` reutilizável para criação e edição.
+- [x] **T5.5 — Edição de transação**
+  - [x] T5.5.1 Criar `TransactionUpdateView` (`UpdateView`), restringindo o queryset ao usuário logado.
+- [x] **T5.6 — Exclusão de transação**
+  - [x] T5.6.1 Criar `TransactionDeleteView` (`DeleteView`), restringindo o queryset ao usuário logado.
+  - [x] T5.6.2 Criar template `transactions/confirm_delete.html` de confirmação.
+- [x] **T5.7 — URLs de transações**
+  - [x] T5.7.1 Criar `transactions/urls.py` com rotas de listagem, criação, edição e exclusão.
+  - [x] T5.7.2 Incluir `transactions.urls` no `core/urls.py`.
+  - [x] T5.7.3 Adicionar link "Transações" na sidebar.
 
 ### Sprint 6 — Dashboard
 
