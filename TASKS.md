@@ -121,29 +121,29 @@
 
 ### Sprint 4 — Categorias
 
-- [ ] **T4.1 — Model de categoria**
-  - [ ] T4.1.1 Criar model `Category` na app `categories`, herdando de `TimeStampedModel`.
-  - [ ] T4.1.2 Adicionar `ForeignKey` para `User`.
-  - [ ] T4.1.3 Adicionar campos `name`, `category_type` (choices: receita/despesa) e `color`.
-  - [ ] T4.1.4 Gerar e aplicar migrações do model `Category`.
-- [ ] **T4.2 — Admin de categorias**
-  - [ ] T4.2.1 Registrar model `Category` no `admin.py` da app `categories`.
-- [ ] **T4.3 — Listagem de categorias**
-  - [ ] T4.3.1 Criar `CategoryListView` (`ListView`) filtrando por `request.user`.
-  - [ ] T4.3.2 Criar template `categories/list.html` com grid de cards coloridos por tipo (receita/despesa), seguindo o design system.
-- [ ] **T4.4 — Criação de categoria**
-  - [ ] T4.4.1 Criar `CategoryForm` (ModelForm).
-  - [ ] T4.4.2 Criar `CategoryCreateView` (`CreateView`) associando a categoria ao usuário logado.
-  - [ ] T4.4.3 Criar template `categories/form.html` reutilizável para criação e edição.
-- [ ] **T4.5 — Edição de categoria**
-  - [ ] T4.5.1 Criar `CategoryUpdateView` (`UpdateView`), restringindo o queryset ao usuário logado.
-- [ ] **T4.6 — Exclusão de categoria**
-  - [ ] T4.6.1 Criar `CategoryDeleteView` (`DeleteView`), restringindo o queryset ao usuário logado.
-  - [ ] T4.6.2 Criar template `categories/confirm_delete.html` de confirmação.
-- [ ] **T4.7 — URLs de categorias**
-  - [ ] T4.7.1 Criar `categories/urls.py` com rotas de listagem, criação, edição e exclusão.
-  - [ ] T4.7.2 Incluir `categories.urls` no `core/urls.py`.
-  - [ ] T4.7.3 Adicionar link "Categorias" na sidebar.
+- [x] **T4.1 — Model de categoria**
+  - [x] T4.1.1 Criar model `Category` na app `categories`, herdando de `TimeStampedModel`.
+  - [x] T4.1.2 Adicionar `ForeignKey` para `User`.
+  - [x] T4.1.3 Adicionar campos `name`, `category_type` (choices: receita/despesa) e `color`.
+  - [x] T4.1.4 Gerar e aplicar migrações do model `Category`.
+- [x] **T4.2 — Admin de categorias**
+  - [x] T4.2.1 Registrar model `Category` no `admin.py` da app `categories`.
+- [x] **T4.3 — Listagem de categorias**
+  - [x] T4.3.1 Criar `CategoryListView` (`ListView`) filtrando por `request.user`.
+  - [x] T4.3.2 Criar template `categories/list.html` com grid de cards coloridos por tipo (receita/despesa), seguindo o design system.
+- [x] **T4.4 — Criação de categoria**
+  - [x] T4.4.1 Criar `CategoryForm` (ModelForm).
+  - [x] T4.4.2 Criar `CategoryCreateView` (`CreateView`) associando a categoria ao usuário logado.
+  - [x] T4.4.3 Criar template `categories/form.html` reutilizável para criação e edição.
+- [x] **T4.5 — Edição de categoria**
+  - [x] T4.5.1 Criar `CategoryUpdateView` (`UpdateView`), restringindo o queryset ao usuário logado.
+- [x] **T4.6 — Exclusão de categoria**
+  - [x] T4.6.1 Criar `CategoryDeleteView` (`DeleteView`), restringindo o queryset ao usuário logado.
+  - [x] T4.6.2 Criar template `categories/confirm_delete.html` de confirmação.
+- [x] **T4.7 — URLs de categorias**
+  - [x] T4.7.1 Criar `categories/urls.py` com rotas de listagem, criação, edição e exclusão.
+  - [x] T4.7.2 Incluir `categories.urls` no `core/urls.py`.
+  - [x] T4.7.3 Adicionar link "Categorias" na sidebar.
 
 ### Sprint 5 — Transações
 
