@@ -173,33 +173,33 @@
   - [x] T5.7.2 Incluir `transactions.urls` no `core/urls.py`.
   - [x] T5.7.3 Adicionar link "Transações" na sidebar.
 
-### Sprint 6 — Dashboard
+### Sprint 6 — Dashboard [X]
 
-- [ ] **T6.1 — View do dashboard**
-  - [ ] T6.1.1 Criar `DashboardView` (Class Based View, `TemplateView`) na app `core`.
-  - [ ] T6.1.2 Calcular saldo total somando saldo inicial das contas e transações associadas.
-  - [ ] T6.1.3 Calcular total de receitas e despesas do período atual (mês corrente).
-  - [ ] T6.1.4 Obter as últimas transações registradas (ex: últimas 5).
-- [ ] **T6.2 — Template do dashboard**
-  - [ ] T6.2.1 Criar template `core/dashboard.html` seguindo o design system.
-  - [ ] T6.2.2 Criar cards de resumo (saldo total, receitas do período, despesas do período) em grid responsivo.
-  - [ ] T6.2.3 Criar seção de últimas transações em formato de lista/tabela.
-- [ ] **T6.3 — URL do dashboard**
-  - [ ] T6.3.1 Criar rota `dashboard/` no `core/urls.py`, protegida por `LoginRequiredMixin`.
-  - [ ] T6.3.2 Adicionar link "Dashboard" na sidebar (item ativo por padrão).
+- [x] **T6.1 — View do dashboard**
+  - [x] T6.1.1 Criar `DashboardView` (Class Based View, `TemplateView`) na app `core`.
+  - [x] T6.1.2 Calcular saldo total somando saldo inicial das contas e transações associadas.
+  - [x] T6.1.3 Calcular total de receitas e despesas do período atual (mês corrente).
+  - [x] T6.1.4 Obter as últimas transações registradas (ex: últimas 5).
+- [x] **T6.2 — Template do dashboard**
+  - [x] T6.2.1 Criar template `core/dashboard.html` seguindo o design system.
+  - [x] T6.2.2 Criar cards de resumo (saldo total, receitas do período, despesas do período) em grid responsivo.
+  - [x] T6.2.3 Criar seção de últimas transações em formato de lista/tabela.
+- [x] **T6.3 — URL do dashboard**
+  - [x] T6.3.1 Criar rota `dashboard/` no `core/urls.py`, protegida por `LoginRequiredMixin`.
+  - [x] T6.3.2 Adicionar link "Dashboard" na sidebar (item ativo por padrão).
 
-### Sprint 7 — Site público (landing page)
+### Sprint 7 — Site público (landing page) [X]
 
-- [ ] **T7.1 — View da landing page**
-  - [ ] T7.1.1 Criar `LandingPageView` (`TemplateView`) na app `core`, acessível sem autenticação.
-  - [ ] T7.1.2 Redirecionar usuários já autenticados diretamente para o dashboard.
-- [ ] **T7.2 — Template da landing page**
-  - [ ] T7.2.1 Criar template `core/landing.html` com seção hero (título, subtítulo, gradiente de fundo).
-  - [ ] T7.2.2 Adicionar seção de benefícios/funcionalidades do produto.
-  - [ ] T7.2.3 Adicionar header público com botões "Cadastre-se" e "Entrar".
-  - [ ] T7.2.4 Adicionar footer simples.
-- [ ] **T7.3 — URL da landing page**
-  - [ ] T7.3.1 Configurar rota raiz (`/`) apontando para `LandingPageView`.
+- [x] **T7.1 — View da landing page**
+  - [x] T7.1.1 Criar `LandingPageView` (`TemplateView`) na app `core`, acessível sem autenticação.
+  - [x] T7.1.2 Redirecionar usuários já autenticados diretamente para o dashboard.
+- [x] **T7.2 — Template da landing page**
+  - [x] T7.2.1 Criar template `core/landing.html` com seção hero (título, subtítulo, gradiente de fundo).
+  - [x] T7.2.2 Adicionar seção de benefícios/funcionalidades do produto.
+  - [x] T7.2.3 Adicionar header público com botões "Cadastre-se" e "Entrar".
+  - [x] T7.2.4 Adicionar footer simples.
+- [x] **T7.3 — URL da landing page**
+  - [x] T7.3.1 Configurar rota raiz (`/`) apontando para `LandingPageView`.
 
 ### Sprint 8 — Consistência visual e refinamento do design system
 
